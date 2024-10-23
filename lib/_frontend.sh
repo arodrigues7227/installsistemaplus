@@ -151,16 +151,16 @@ move_whaticket_files() {
   sudo su - root <<EOF
 
 
-  sudo rm -r /home/deployautomatizaai/whaticket/frontend/whaticketplus
+  sudo rm -r /home/deployautomatizaai/whaticket/frontend/automatizaai
   sudo rm -r /home/deployautomatizaai/whaticket/frontend/package.json
-  sudo rm -r /home/deployautomatizaai/whaticket/backend/whaticketplus
+  sudo rm -r /home/deployautomatizaai/whaticket/backend/automatizaai
   sudo rm -r /home/deployautomatizaai/whaticket/backend/package.json
   sudo rm -rf /home/deployautomatizaai/whaticket/frontend/node_modules
   sudo rm -rf /home/deployautomatizaai/whaticket/backend/node_modules
 
-  sudo mv /root/whaticket/frontend/whaticketplus /home/deployautomatizaai/whaticket/frontend
+  sudo mv /root/whaticket/frontend/automatizaai /home/deployautomatizaai/whaticket/frontend
   sudo mv /root/whaticket/frontend/package.json /home/deployautomatizaai/whaticket/frontend
-  sudo mv /root/whaticket/backend/whaticketplus /home/deployautomatizaai/whaticket/backend
+  sudo mv /root/whaticket/backend/automatizaai /home/deployautomatizaai/whaticket/backend
   sudo mv /root/whaticket/backend/package.json /home/deployautomatizaai/whaticket/backend
   sudo rm -rf /root/whaticket
   sudo apt update
